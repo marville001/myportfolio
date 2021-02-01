@@ -9,7 +9,7 @@ import mightycoder from "../assets/mightycoder.svg";
 
 const Sidebar = () => {
   return (
-    <div>
+    <div className="sidebar">
       <img src={mightycoder} alt="avatar" className="sidebar__avatar" />
       <div className="sidebar__name">
         Martin <span>Mwangi</span>
@@ -21,15 +21,15 @@ const Sidebar = () => {
           Resume
         </div>
       </a>
-      <figure className="sidebar__social-icons">
+      <figure className="sidebar__social-icons my-2">
         <a href="">
-          <img src={facebook} className="sidebar__icon" alt="facebook" />
+          <img src={facebook} className="sidebar__icon mr-3" alt="facebook" />
         </a>
         <a href="">
           <img src={instagram} className="sidebar__icon" alt="instagram" />
         </a>
       </figure>
-      <div className="contact">
+      <div className="sidebar__contact">
         <div className="sedebar__item">
           <a href="">
             <img src={github} alt="" className="sidebar__icon" />
