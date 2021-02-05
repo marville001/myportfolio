@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
               <Sidebar/>
           </div>
           <div className="col-lg-9 app__main-content">
-            main container
+              <Navbar/>
           </div>
         </div>
       </div>
