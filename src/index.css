@@ -108,3 +108,9 @@ a:hover {
     margin: 30px 0;
   }
 }
+
+
+/* Navbar */
+.navbar__items{
+  display: flex;
+}
