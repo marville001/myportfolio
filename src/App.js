@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Route, Redirect, Switch } from "react-router-dom";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -8,20 +8,25 @@ import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <div className="row">
+      <div className="container app__container">
+        <div className="row app__row">
           <div className="col-lg-3">
-              <Sidebar/>
+            <Sidebar />
           </div>
           <div className="col-lg-9 app__main-content">
-              <Navbar/>
+            <Navbar />
+            <Switch>
               <Route exact path="/">
-                <About/>
+                <About />
               </Route>
               <Route path="/resume">
-                <Resume/>
+                <Resume />
               </Route>
-              <Route path="/projects" component={Projects}/>
+              <Route path="/projects" component={Projects} />
+              <Route>
+                <Redirect to="/" />
+              </Route>
+            </Switch>
           </div>
         </div>
       </div>

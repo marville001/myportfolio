@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 body {
-  
   background-image: linear-gradient(to right bottom, #00f260, #0575e6);
   background-attachment: fixed;
+  color: #354538;
 }
 
 a {
@@ -23,25 +22,23 @@ a:hover {
   color: #000;
 }
 
-.container {
+.app__container {
   padding-top: 50px;
 }
 
-.row {
-  height: 90vh;
-
+.app__row {
+  height: 86vh;
 }
 
-.app__main-content{ 
+.app__main-content {
   background-color: #fff;
   border-radius: 20px;
   padding: 25px 15px;
   box-shadow: 0px opx 10px black;
 }
 
-
 /* Sidebar */
-.sidebar{
+.sidebar {
   background-color: #fff;
   height: 100%;
   border-radius: 20px;
@@ -49,87 +46,131 @@ a:hover {
   box-shadow: 0px opx 30px black;
   text-align: center;
 }
-.sidebar__avatar{
+.sidebar__avatar {
   height: 110px;
   width: 120px;
   object-fit: contain;
   border-radius: 30px;
 }
 
-.sidebar__icon{
+.sidebar__icon {
   width: 25ps;
   height: 25px;
 }
 
-.sidebar__name{
+.sidebar__name {
   font-family: "Kaushan Script", sans-serif;
   margin: 20px 0;
   user-select: none;
   font-size: 1.7rem;
 }
-.sidebar__name > span{
+.sidebar__name > span {
   color: #00f260;
 }
-.sidebar__item{
+.sidebar__item {
   margin-bottom: 6px;
   padding-top: 6px;
   height: 40px;
   font-size: 1.05rem;
   border-radius: 30px;
 }
-.sidebar__title{
+.sidebar__title {
   background-color: #f1f1f1;
   border-radius: 30px;
 }
-.sidebar__contact{
+.sidebar__contact {
   background-color: #dbdddf;
   padding: 2px 0px;
   margin: 20px -15px;
 }
-.sidebar__email{
+.sidebar__email {
   background-image: linear-gradient(to right bottom, #00f260, #0575e6);
-  border-radius: 30px;color: #fff;
-   margin: 15px 25px 0px;
-   cursor: pointer;
-   transition: all .3s linear;
+  border-radius: 30px;
+  color: #fff;
+  margin: 15px 25px 0px;
+  cursor: pointer;
+  transition: all 0.3s linear;
 }
-.sidebar__email:hover{
+.sidebar__email:hover {
   transform: scale(1.2);
 }
 
 .sidebar__github:hover,
-.sidebar__resume:hover{
+.sidebar__resume:hover {
   background-color: #f1f1f2;
-  color:#000;
+  color: #000;
 }
 
-@media(max-width:991px){
-  .app__main-content{
+@media (max-width: 991px) {
+  .app__main-content {
     margin: 30px 0;
   }
 }
 
-
 /* Navbar */
-.navbar__items{
+.navbar__items {
   display: flex;
 }
-.navbar__active{
+.navbar__active {
   font-size: 2rem;
   font-weight: 700;
   color: #354358;
   border-bottom: 4px solid #00f260;
 }
-.navbar__item{
+.navbar__item {
   margin-right: 20px;
   text-decoration: none;
   color: #354358;
   font-size: 1.3rem;
   cursor: pointer;
 }
-.navbar__item:hover{
+.navbar__item:hover {
   background: -webkit-linear-gradient(#00f260, #0575e6);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* About */
+.about {
+  padding: 20px;
+  margin: -35px;
+}
+.about__intro {
+  font-size: 1.3rem;
+  padding: 20px;
+  margin: 10px 0;
+}
+.about__container {
+  background-color: #dbddef;
+  padding: 36px 20px;
+}
+
+.about__heading {
+  font-size: 25px;
+  font-weight: 700;
+  color: #354358;
+  margin-left: 10px;
+}
+
+/* Skill card */
+.skill-card {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px;
+}
+.skill-card__icon {
+  height: 40px;
+  width: 40px;
+}
+.skill-card-body {
+  margin-left: 15px;
+}
+.skill-card__content {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6e7e91;
 }
