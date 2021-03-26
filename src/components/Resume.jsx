@@ -22,37 +22,35 @@ const Resume = () => {
           <h4 className="resume-card__heading">Education</h4>
           <div className="resume-card__body">
             <h5 className="resume-card__title">Computer Science</h5>
-            <p className="resume-card__name">Academy of Technology</p>
+            <p className="resume-card__name">Dedan Kimathi University</p>
             <p className="resume-card__details">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
-              corrupti facere optio.
+              Am currently a student in Dedan Kimathi University of Technology persuing bachelor of science in computer science. Fourth year second semester
             </p>
           </div>
         </div>
         <div className="col-lg-6 resume=card">
           <h4 className="resume-card__heading">Experience</h4>
           <div className="resume-card__body">
-            <h5 className="resume-card__title">Lorem, ipsum.</h5>
-            <p className="resume-card__name">Lorem, ipsum dolor.</p>
+            <h5 className="resume-card__title">FreeLancer</h5>
+            <p className="resume-card__name">3 years + Experience</p>
             <p className="resume-card__details">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
-              corrupti facere optio.
+              I have been programming and working on personal project for 3 years where i have gained experience in various languages.
             </p>
           </div>
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-6 resume-language">
+        <div className="col-lg-6 resume-languages">
           <h5 className="resume-language__heading">Language and Frameworks</h5>
-          <div className="resume-language__body">
+          <div className="resume-language__body mt-3">
             {languages.map((language) => (
               <Bar value={language} />
             ))}
           </div>
         </div>
-        <div className="col-lg-6 resume-language">
+        <div className="col-lg-6 resume-languages">
           <h5 className="resume-language__heading">Tools and Softwares</h5>
-          <div className="resume-language__body">
+          <div className="resume-language__body mt-3">
             {tools.map((tool) => (
               <Bar value={tool} />
             ))}

@@ -14,7 +14,7 @@ const Bar = ({ value: { icon, name, level } }) => {
           <img src={icon} alt="icon" className="bar__icon  mr-2" />
           {name}
         </span>
-        <span> {level}</span>
+        <span style={{marginLeft:"20px", color:"#fff", fontWeight:"800"}}> {level} %</span>
       </div>
     </div>
   );
